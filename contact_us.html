@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Greenwood Library Community</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Contact Us</h1>
+            <p>We would love to hear from you! Reach out to us with any questions or feedback.</p>
+
+            <p><strong>Address:</strong> 123 Library Street, Greenwood, State, 12345</p>
+            <p><strong>Email:</strong> contact@greenwoodlibrary.com</p>
+            <p><strong>Phone:</strong> (123) 456-7890</p>
+
+            <h2>Send us a message</h2>
+            <form action="submit_contact_form.php" method="POST">
+                <label for="name">Your Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Your Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Your Message:</label><br>
+                <textarea id="message" name="message" required></textarea><br><br>
+
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Greenwood Library Community. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
