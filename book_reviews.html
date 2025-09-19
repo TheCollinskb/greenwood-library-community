@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Reviews - Greenwood Library Community</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Add your CSS file for styling -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="book_reviews.html">Book Reviews</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Book Reviews</h1>
+            <p>Welcome to our Book Reviews page! Here you can find reviews from fellow readers, explore new book recommendations, and share your own thoughts on your latest reads.</p>
+        </section>
+
+        <section>
+            <h2>Featured Book Reviews</h2>
+            <div class="book-review">
+                <h3>"The Great Gatsby" by F. Scott Fitzgerald</h3>
+                <p><strong>Reviewed by:</strong> John Doe</p>
+                <p><strong>Rating:</strong> ★★★★☆ (4/5)</p>
+                <p><strong>Review:</strong> "The Great Gatsby is a powerful exploration of the American Dream and the decadence of the Jazz Age. Fitzgerald's prose is poetic and the themes are still relevant today, making it a timeless classic."</p>
+            </div>
+
+            <div class="book-review">
+                <h3>"To Kill a Mockingbird" by Harper Lee</h3>
+                <p><strong>Reviewed by:</strong> Jane Smith</p>
+                <p><strong>Rating:</strong> ★★★★★ (5/5)</p>
+                <p><strong>Review:</strong> "This novel is a masterpiece of empathy and moral growth. Set in the deep South during the 1930s, it deals with racism, justice, and growing up in a way that is both heartbreaking and inspiring."</p>
+            </div>
+
+            <div class="book-review">
+                <h3>"1984" by George Orwell</h3>
+                <p><strong>Reviewed by:</strong> Emily Green</p>
+                <p><strong>Rating:</strong> ★★★★★ (5/5)</p>
+                <p><strong>Review:</strong> "1984 is as unsettling today as it was when it was first published. Orwell's chilling vision of a totalitarian state is a stark warning about the dangers of surveillance and loss of individual freedoms."</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Submit Your Book Review</h2>
+            <p>Have you recently read a book you want to share your thoughts on? Submit your review below and help others find their next great read!</p>
+
+            <form action="submit_review.php" method="POST">
+                <label for="book_title">Book Title:</label><br>
+                <input type="text" id="book_title" name="book_title" required><br><br>
+
+                <label for="author">Author:</label><br>
+                <input type="text" id="author" name="author" required><br><br>
+
+                <label for="rating">Your Rating:</label><br>
+                <select id="rating" name="rating" required>
+                    <option value="1">★</option>
+                    <option value="2">★★</option>
