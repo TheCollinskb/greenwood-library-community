@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events - Greenwood Library Community</title>
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- FullCalendar CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@3.2.0/dist/fullcalendar.min.css" rel="stylesheet">
+    
+    <!-- jQuery (required by FullCalendar) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@3.2.0/dist/fullcalendar.min.js"></script>
+
 </head>
 <body>
     <header>
@@ -13,6 +22,7 @@
                 <li><a href="home.html">Home</a></li>
                 <li><a href="about_us.html">About Us</a></li>
                 <li><a href="events.html">Events</a></li>
+                <li><a href="book_reviews.html">Book Reviews</a></li>
                 <li><a href="contact_us.html">Contact Us</a></li>
             </ul>
         </nav>
@@ -20,17 +30,28 @@
 
     <main>
         <section>
-            <h1>Upcoming Events</h1>
-            <ul>
-                <li><strong>Book Club Meeting:</strong> Every Friday at 5 PM. Join us to discuss this month's book.</li>
-                <li><strong>Storytelling for Kids:</strong> Saturday, October 10th at 10 AM. Free event for children aged 5-10.</li>
-                <li><strong>Author Meet & Greet:</strong> Sunday, October 15th at 3 PM. Meet local authors and get your books signed.</li>
+            <h1>Upcoming Library Events</h1>
+            <p>Explore the upcoming events at Greenwood Library. You can view events by calendar or browse our list of upcoming events below!</p>
+        </section>
+
+        <section>
+            <h2>Interactive Calendar</h2>
+            <div id="calendar"></div>
+        </section>
+
+        <section>
+            <h2>Upcoming Events</h2>
+            <ul id="event-list">
+                <!-- Dynamic list of upcoming events will be shown here -->
+                <li><strong>Book Club Meeting</strong> - Every Friday at 5 PM. Join us to discuss this month's book.</li>
+                <li><strong>Storytelling for Kids</strong> - Saturday, October 10th at 10 AM. Free event for children aged 5-10.</li>
+                <li><strong>Author Meet & Greet</strong> - Sunday, October 15th at 3 PM. Meet local authors and get your books signed.</li>
+                <li><strong>Workshop: Writing for Beginners</strong> - Wednesday, October 20th at 2 PM. Learn the basics of creative writing.</li>
+                <li><strong>Monthly Reading Challenge</strong> - Starts October 25th! Participate in a month-long reading challenge to win prizes.</li>
             </ul>
         </section>
+
     </main>
 
     <footer>
-        <p>&copy; 2025 Greenwood Library Community. All Rights Reserved.</p>
-    </footer>
-</body>
-</html>
+        <p>&copy; 2025 Greenwood Library Community. All Rig
